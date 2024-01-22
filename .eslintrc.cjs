@@ -19,6 +19,8 @@ module.exports = {
   },
   plugins: ['react-refresh', 'react'],
   rules: {
+    'multiline-ternary': 'off',
+    '@typescript-eslint/space-before-function-paren': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/strict-boolean-expressions': 'off',
     'react-refresh/only-export-components': [

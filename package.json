@@ -1,5 +1,9 @@
 {
-  "private": true,
+  "name": "link",
+  "version": "0.1.0",
+  "author": "Emanuel Peire",
+  "license": "MIT",
+  "description": "Links to my social media",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

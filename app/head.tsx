@@ -1,4 +1,4 @@
-export default function Head() {
+export default function Head () {
   return (
     <>
       <title>Linktree</title>
@@ -6,5 +6,5 @@ export default function Head() {
       <link rel="icon" href="/favicon.ico" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
     </>
-  );
+  )
 }

@@ -1,11 +1,11 @@
-import Image from "next/image";
-import { get } from "@vercel/edge-config";
-import { redirect } from "next/navigation";
+import Image from 'next/image'
+import { get } from '@vercel/edge-config'
+import { redirect } from 'next/navigation'
 
-export const dynamic = "force-dynamic",
-  runtime = "edge";
+export const dynamic = 'force-dynamic'
+export const runtime = 'edge'
 
-function TwitterIcon() {
+function TwitterIcon () {
   return (
     <svg
       width="30"
@@ -26,10 +26,10 @@ function TwitterIcon() {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }
 
-function GitHubIcon() {
+function GitHubIcon () {
   return (
     <svg
       width="30"
@@ -50,17 +50,17 @@ function GitHubIcon() {
         </clipPath>
       </defs>
     </svg>
-  );
+  )
 }
 
-function LinkCard({
+function LinkCard ({
   href,
   title,
-  image,
+  image
 }: {
-  href: string;
-  title: string;
-  image?: string;
+  href: string
+  title: string
+  image?: string
 }) {
   return (
     <a
@@ -86,33 +86,33 @@ function LinkCard({
         </h2>
       </div>
     </a>
-  );
+  )
 }
 
 interface Data {
-  name: string;
-  avatar: string;
-  links: Link[];
-  socials: Social[];
+  name: string
+  avatar: string
+  links: Link[]
+  socials: Social[]
 }
 
 interface Link {
-  href: string;
-  title: string;
-  image?: string;
+  href: string
+  title: string
+  image?: string
 }
 
 interface Social {
-  href: string;
-  title: string;
+  href: string
+  title: string
 }
 
-export default async function HomePage() {
-  const data: Data | undefined = await get("linktree");
+export default async function HomePage () {
+  const data: Data | undefined = await get('linktree')
 
   if (!data) {
     // not working yet https://github.com/vercel/next.js/issues/44232
-    redirect("https://linktr.ee/selenagomez");
+    redirect('https://linktr.ee/selenagomez')
   }
 
   return (
@@ -138,14 +138,18 @@ export default async function HomePage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {social.href.includes("twitter") ? (
+            {social.href.includes('twitter')
+              ? (
               <TwitterIcon />
-            ) : social.href.includes("github") ? (
+                )
+              : social.href.includes('github')
+                ? (
               <GitHubIcon />
-            ) : null}
+                  )
+                : null}
           </a>
         ))}
       </div>
     </div>
-  );
+  )
 }

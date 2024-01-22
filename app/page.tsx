@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import { get } from '@vercel/edge-config';
-import { redirect } from 'next/navigation';
+import Image from "next/image";
+import { get } from "@vercel/edge-config";
+import { redirect } from "next/navigation";
 
-export const dynamic = 'force-dynamic',
-  runtime = 'edge';
+export const dynamic = "force-dynamic",
+  runtime = "edge";
 
 function TwitterIcon() {
   return (
@@ -108,11 +108,11 @@ interface Social {
 }
 
 export default async function HomePage() {
-  const data: Data | undefined = await get('linktree');
+  const data: Data | undefined = await get("linktree");
 
   if (!data) {
     // not working yet https://github.com/vercel/next.js/issues/44232
-    redirect('https://linktr.ee/selenagomez');
+    redirect("https://linktr.ee/selenagomez");
   }
 
   return (
@@ -138,9 +138,9 @@ export default async function HomePage() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {social.href.includes('twitter') ? (
+            {social.href.includes("twitter") ? (
               <TwitterIcon />
-            ) : social.href.includes('github') ? (
+            ) : social.href.includes("github") ? (
               <GitHubIcon />
             ) : null}
           </a>

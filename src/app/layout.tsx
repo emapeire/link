@@ -3,7 +3,7 @@ import { type Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Head } from 'src/components/head'
 // import { Analytics } from '@vercel/analytics/react'
-import './globals.css'
+import 'src/styles/globals.css'
 
 const metadata: Metadata = {
   title: 'Links | Emanuel Peire',

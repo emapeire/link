@@ -1,17 +1,20 @@
 export interface Data {
   name: string
+  userName: string
   avatar: string
-  links: Link[]
+  about: string
+  contact: Contact[]
   socials: Social[]
 }
 
-export interface Link {
-  href: string
+export interface Contact {
   title: string
-  image?: string
+  url: string
+  icon: JSX.Element | string
 }
 
 export interface Social {
-  href: string
   title: string
+  url: string
+  icon: JSX.Element | string
 }

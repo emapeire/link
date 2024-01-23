@@ -1,9 +1,9 @@
 import type React from 'react'
-import { HeadIcons } from 'src/components/head-icons'
 import { type Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
+import { Head } from 'src/components/head'
 // import { Analytics } from '@vercel/analytics/react'
+import './globals.css'
 
 const metadata: Metadata = {
   title: 'Links | Emanuel Peire',
@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className={`${inter.className}`}>
-      <HeadIcons metadata={metadata} />
+      <Head metadata={metadata} />
       <body>
         {children}
         {/* <Analytics /> */}

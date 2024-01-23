@@ -19,6 +19,7 @@ module.exports = {
   },
   plugins: ['react-refresh', 'react'],
   rules: {
+    '@next/next/no-head-element': 'off',
     'multiline-ternary': 'off',
     '@typescript-eslint/space-before-function-paren': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',

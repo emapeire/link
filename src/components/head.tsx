@@ -1,12 +1,11 @@
-import Head from 'next/head'
 import { type Metadata } from 'next'
 
-export function HeadIcons({ metadata }: { metadata: Metadata }) {
+export function Head({ metadata }: { metadata: Metadata }) {
   return (
-    <Head>
+    <head>
       <meta charSet='utf-8' />
       <meta name='viewport' content='width=device-width, initial-scale=1' />
-      <meta title={metadata.title?.toString()} />
+      <title>{metadata.title?.toString()}</title>
       <meta name='description' content={metadata.description?.toString()} />
       <meta name='author' content='Emanuel Peire' />
       <meta name='robots' content='index, follow' />
@@ -47,6 +46,6 @@ export function HeadIcons({ metadata }: { metadata: Metadata }) {
       />
       <link rel='manifest' href='/site.webmanifest' />
       <link rel='mask-icon' href='/safari-pinned-tab.svg' color='#000000' />
-    </Head>
+    </head>
   )
 }

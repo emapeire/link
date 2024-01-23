@@ -1,9 +1,9 @@
 import type React from 'react'
 import { type Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { Head } from 'src/components/head'
+import { Head } from '@/components/head'
 // import { Analytics } from '@vercel/analytics/react'
-import 'src/styles/globals.css'
+import '@/styles/globals.css'
 
 const metadata: Metadata = {
   title: 'Links | Emanuel Peire',

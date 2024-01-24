@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { LinkCard } from '@/components/link-card'
-import { GitHubIcon, XIcon } from '@/components/icons'
 import { LINKS_DATA } from '@/data/LINKS_DATA'
 import { type Data } from '@/types'
 // import { get } from '@vercel/edge-config'
@@ -26,23 +25,19 @@ export default function HomePage() {
           height={96}
         />
         <h1 className='font-bold mt-4 mb-8 text-xl text-white'>{data.name}</h1>
-        {data.links.map((link) => (
-          <LinkCard key={link.href} {...link} />
+        {data.contact.map((contact) => (
+          <LinkCard key={contact.url} {...contact} />
         ))}
         <div className='flex items-center gap-4 mt-8 text-white'>
           {data.socials.map((social) => (
             <a
               aria-label={`${social.title} link`}
-              key={social.href}
-              href={social.href}
+              key={social.url}
+              href={social.url}
               target='_blank'
               rel='noopener noreferrer'
             >
-              {social.href.includes('x') ? (
-                <XIcon />
-              ) : social.href.includes('github') ? (
-                <GitHubIcon />
-              ) : null}
+              {social.icon}
             </a>
           ))}
         </div>

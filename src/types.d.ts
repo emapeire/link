@@ -10,11 +10,11 @@ export interface Data {
 export interface Contact {
   title: string
   url: string
-  icon: JSX.Element | string
+  icon: JSX.Element
 }
 
 export interface Social {
   title: string
   url: string
-  icon: JSX.Element | string
+  icon: JSX.Element
 }

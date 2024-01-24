@@ -4,13 +4,15 @@ import {
   XIcon,
   EmailIcon,
   WebSiteIcon,
-  PhoneIcon
+  PhoneIcon,
+  TelegramIcon,
+  DevToIcon
 } from '@/components/icons'
 
 export const LINKS_DATA = {
   name: 'Emanuel Peire',
   userName: 'emapeire',
-  avatar: '/images/avatar.jpg',
+  avatar: '/images/avatar.png',
   about:
     'Frontend Engineer, OSS Developer, LLMs technical researcher and DX Architect. Always influenced by design.',
   contact: [
@@ -49,12 +51,12 @@ export const LINKS_DATA = {
     {
       title: 'Telegram',
       url: 'https://t.me/emapeire',
-      icon: 'https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg'
+      icon: TelegramIcon
     },
     {
       title: 'Dev Community',
       url: 'https://dev.to/emapeire',
-      icon: 'https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg'
+      icon: DevToIcon
     }
   ]
 }

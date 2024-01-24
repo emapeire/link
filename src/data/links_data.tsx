@@ -47,4 +47,4 @@ export const LINKS_DATA = {
       icon: '/src/icons/devto-icon.svg'
     }
   ]
-} as const
+}

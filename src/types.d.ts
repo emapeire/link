@@ -9,5 +9,5 @@ export interface Data {
 export interface Links {
   title: string
   url: string
-  icon: () => JSX.Element
+  icon: string
 }

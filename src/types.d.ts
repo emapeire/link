@@ -1,6 +1,5 @@
 export interface Data {
   name: string
-  userName: string
   avatar: string
   about: string
   contacts: Links[]
@@ -10,5 +9,5 @@ export interface Data {
 export interface Links {
   title: string
   url: string
-  icon: JSX.Element
+  icon: () => JSX.Element
 }

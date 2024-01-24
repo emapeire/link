@@ -1,6 +1,6 @@
-export const XIcon = (props: React.SVGProps<SVGSVGElement>) => {
+export const XIcon = () => {
   return (
-    <svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' {...props}>
+    <svg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
       <title>X</title>
       <path
         fill='currentColor'

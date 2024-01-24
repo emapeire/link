@@ -9,7 +9,7 @@ export function SocialsCard({ title, url, icon }: Links) {
       target='_blank'
       rel='noopener noreferrer'
     >
-      {icon}
+      {icon()}
     </a>
   )
 }

@@ -19,6 +19,7 @@ export default function HomePage() {
           height={96}
         />
         <h1 className='font-bold mt-4 mb-8 text-xl text-white'>{data.name}</h1>
+        <h3 className='flex items-center gap-4 text-white'>{data.about}</h3>
         {data.contacts.map((contact) => (
           <ContactCard key={contact.url} {...contact} />
         ))}

@@ -1,4 +1,4 @@
-export const PhoneIcon = (props: React.SVGProps<SVGSVGElement>) => {
+export const PhoneIcon = () => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'

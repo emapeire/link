@@ -1,14 +1,3 @@
-import {
-  GitHubIcon,
-  LinkedInIcon,
-  XIcon,
-  EmailIcon,
-  WebSiteIcon,
-  PhoneIcon,
-  TelegramIcon,
-  DevToIcon
-} from '@/components/icons'
-
 export const LINKS_DATA = {
   name: 'Emanuel Peire',
   avatar: '/images/avatar.png',
@@ -18,44 +7,44 @@ export const LINKS_DATA = {
     {
       title: 'Website',
       url: 'https://emapeire.xyz',
-      icon: WebSiteIcon
+      icon: '/src/icons/website-icon.svg'
     },
     {
       title: 'Email',
       url: 'mailto:me@emapeire.xyz',
-      icon: EmailIcon
+      icon: '/src/icons/email-icon.svg'
     },
     {
       title: 'Phone',
       url: 'tel:+5493417190449',
-      icon: PhoneIcon
+      icon: '/src/icons/phone-icon.svg'
     }
   ],
   socials: [
     {
       title: 'GitHub',
       url: 'https://github.com/emapeire',
-      icon: GitHubIcon
+      icon: '/src/icons/github-icon.svg'
     },
     {
       title: 'X',
       url: 'https://x.com/emapeire',
-      icon: XIcon
+      icon: '/src/icons/x-icon.svg'
     },
     {
       title: 'LinkedIn',
       url: 'https://www.linkedin.com/in/emanuelpeire',
-      icon: LinkedInIcon
+      icon: '/src/icons/linkedin-icon.svg'
     },
     {
       title: 'Telegram',
       url: 'https://t.me/emapeire',
-      icon: TelegramIcon
+      icon: '/src/icons/telegram-icon.svg'
     },
     {
       title: 'Dev Community',
       url: 'https://dev.to/emapeire',
-      icon: DevToIcon
+      icon: '/src/icons/devto-icon.svg'
     }
   ]
-}
+} as const

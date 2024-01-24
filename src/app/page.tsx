@@ -1,16 +1,10 @@
 import Image from 'next/image'
-import { LinkCard } from '@/components/link-card'
-import { LINKS_DATA } from '@/data/LINKS_DATA'
 import { type Data } from '@/types'
-// import { get } from '@vercel/edge-config'
-// import { redirect } from 'next/navigation'
+import { LINKS_DATA } from '@/data/links_data'
+import { ContactCard } from '@/components/contact-card'
+import { SocialsCard } from '@/components/socials-card'
 
 export default function HomePage() {
-  // const data: Data | undefined = await get('linktree')
-  // if (!data) {
-  //   redirect('https://linktr.ee/emapeire')
-  // }
-
   const data: Data = LINKS_DATA
 
   return (
@@ -25,20 +19,12 @@ export default function HomePage() {
           height={96}
         />
         <h1 className='font-bold mt-4 mb-8 text-xl text-white'>{data.name}</h1>
-        {data.contact.map((contact) => (
-          <LinkCard key={contact.url} {...contact} />
+        {data.contacts.map((contact) => (
+          <ContactCard key={contact.url} {...contact} />
         ))}
         <div className='flex items-center gap-4 mt-8 text-white'>
           {data.socials.map((social) => (
-            <a
-              aria-label={`${social.title} link`}
-              key={social.url}
-              href={social.url}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              {social.icon}
-            </a>
+            <SocialsCard key={social.url} {...social} />
           ))}
         </div>
       </div>

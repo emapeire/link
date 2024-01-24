@@ -15,7 +15,7 @@ export const LINKS_DATA = {
   avatar: '/images/avatar.png',
   about:
     'Frontend Engineer, OSS Developer, LLMs technical researcher and DX Architect. Always influenced by design.',
-  contact: [
+  contacts: [
     {
       title: 'Website',
       url: 'https://emapeire.xyz',

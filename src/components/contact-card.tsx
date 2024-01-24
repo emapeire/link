@@ -1,12 +1,6 @@
-export function LinkCard({
-  url,
-  title,
-  icon
-}: {
-  url: string
-  title: string
-  icon: JSX.Element
-}) {
+import { type Links } from '@/types'
+
+export function ContactCard({ title, url, icon }: Links) {
   return (
     <a
       href={url}

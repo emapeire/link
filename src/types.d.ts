@@ -3,17 +3,11 @@ export interface Data {
   userName: string
   avatar: string
   about: string
-  contact: Contact[]
-  socials: Social[]
+  contacts: Links[]
+  socials: Links[]
 }
 
-export interface Contact {
-  title: string
-  url: string
-  icon: JSX.Element
-}
-
-export interface Social {
+export interface Links {
   title: string
   url: string
   icon: JSX.Element

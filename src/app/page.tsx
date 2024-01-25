@@ -9,7 +9,7 @@ export default function HomePage() {
 
   return (
     <main>
-      <div className='flex items-center flex-col mx-auto w-full justify-center mt-16 px-8'>
+      <div className='flex items-center flex-col mx-auto w-full justify-center my-16 px-8'>
         <Avatar className='h-24 w-24'>
           <AvatarImage alt={data.name} src={data.avatar} />
           <AvatarFallback>{data.initials}</AvatarFallback>

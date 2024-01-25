@@ -7,44 +7,44 @@ export const LINKS_DATA = {
     {
       title: 'Website',
       url: 'https://emapeire.xyz',
-      icon: '/src/icons/website-icon.svg'
+      icon: '/icons/website-icon.svg'
     },
     {
       title: 'Email',
       url: 'mailto:me@emapeire.xyz',
-      icon: '/src/icons/email-icon.svg'
+      icon: '/icons/email-icon.svg'
     },
     {
       title: 'Phone',
       url: 'tel:+5493417190449',
-      icon: '/src/icons/phone-icon.svg'
+      icon: '/icons/phone-icon.svg'
     }
   ],
   socials: [
     {
       title: 'GitHub',
       url: 'https://github.com/emapeire',
-      icon: '/src/icons/github-icon.svg'
+      icon: '/icons/github-icon.svg'
     },
     {
       title: 'X',
       url: 'https://x.com/emapeire',
-      icon: '/src/icons/x-icon.svg'
+      icon: '/icons/x-icon.svg'
     },
     {
       title: 'LinkedIn',
       url: 'https://www.linkedin.com/in/emanuelpeire',
-      icon: '/src/icons/linkedin-icon.svg'
+      icon: '/icons/linkedin-icon.svg'
     },
     {
       title: 'Telegram',
       url: 'https://t.me/emapeire',
-      icon: '/src/icons/telegram-icon.svg'
+      icon: '/icons/telegram-icon.svg'
     },
     {
       title: 'Dev Community',
       url: 'https://dev.to/emapeire',
-      icon: '/src/icons/devto-icon.svg'
+      icon: '/icons/devto-icon.svg'
     }
   ]
 }

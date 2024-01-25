@@ -27,11 +27,9 @@ export default function HomePage() {
         ))}
       </section>
 
-      <section className='flex flex-col items-center gap-2'>
-        {data.socials.map((contact) => (
-          <SocialCard key={contact.url} {...contact} />
-        ))}
-      </section>
+      {data.socials.map((contact) => (
+        <SocialCard key={contact.url} {...contact} />
+      ))}
     </main>
   )
 }

@@ -1,5 +1,6 @@
 export interface Data {
   name: string
+  initials: string
   avatar: string
   about: string
   contacts: Links[]

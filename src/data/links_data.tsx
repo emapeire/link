@@ -1,5 +1,6 @@
 export const LINKS_DATA = {
   name: 'Emanuel Peire',
+  initials: 'EP',
   avatar: '/images/avatar.png',
   about:
     'Frontend Engineer, OSS Developer, LLMs technical researcher and DX Architect. Always influenced by design.',

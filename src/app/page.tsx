@@ -14,8 +14,12 @@ export default function HomePage() {
           <AvatarImage alt={data.name} src={data.avatar} />
           <AvatarFallback>{data.initials}</AvatarFallback>
         </Avatar>
-        <h1 className='font-bold mt-4 mb-8 text-xl text-white'>{data.name}</h1>
-        <h3 className='items-center text-white'>{data.about}</h3>
+        <div className='flex flex-col text-center text-white'>
+          <h1 className='font-bold mt-8 mb-2 text-xl'>{data.name}</h1>
+          <p className='mx-auto max-w-xl px-4 text-sm font-semibold text-slate-400'>
+            {data.about}
+          </p>
+        </div>
         <div className='flex items-center gap-4 mt-8 text-white'>
           {data.contacts.map((social) => (
             <ContactCard key={social.url} {...social} />

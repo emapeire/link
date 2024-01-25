@@ -21,13 +21,13 @@ export default function HomePage() {
         </p>
       </section>
 
-      <section className='flex items-center gap-6 my-8 text-white'>
+      <section className='flex items-center gap-6 my-8'>
         {data.contacts.map((social) => (
           <ContactCard key={social.url} {...social} />
         ))}
       </section>
 
-      <section className='flex flex-col items-center gap-6 my-8 text-white'>
+      <section className='flex flex-col items-center gap-2'>
         {data.socials.map((contact) => (
           <SocialCard key={contact.url} {...contact} />
         ))}

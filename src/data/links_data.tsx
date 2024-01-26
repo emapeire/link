@@ -38,14 +38,14 @@ export const LINKS_DATA = {
       icon: '/icons/linkedin-icon.svg'
     },
     {
-      title: 'Telegram',
-      url: 'https://t.me/emapeire',
-      icon: '/icons/telegram-icon.svg'
-    },
-    {
       title: 'Dev Community',
       url: 'https://dev.to/emapeire',
       icon: '/icons/devto-icon.svg'
+    },
+    {
+      title: 'Telegram',
+      url: 'https://t.me/emapeire',
+      icon: '/icons/telegram-icon.svg'
     }
   ]
 }

@@ -8,7 +8,7 @@ export default function HomePage() {
   const data: Data = LINKS_DATA
 
   return (
-    <main className='flex items-center flex-col mx-auto w-full justify-center my-16 px-8'>
+    <main className='flex items-center flex-col mx-auto w-full justify-center mt-16 mb-12 px-8'>
       <Avatar className='h-28 w-28'>
         <AvatarImage alt={data.name} src={data.avatar} />
         <AvatarFallback>{data.initials}</AvatarFallback>

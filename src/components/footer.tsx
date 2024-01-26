@@ -2,7 +2,7 @@ export function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className='text-slate-400 text-center text-xs'>
+    <footer className='text-slate-400 text-center text-xs mb-2'>
       @ {`${year}`}
     </footer>
   )

@@ -1,4 +1,4 @@
-export const LINKS_DATA = {
+export const SOCIAL_DATA = {
   name: 'Emanuel Peire',
   initials: 'EP',
   avatar: '/images/avatar.png',

@@ -1,11 +1,11 @@
-import { LINKS_DATA } from '@/data/links_data'
+import { SOCIAL_DATA } from '@/data/social_data'
 import { type Data } from '@/types'
 import { ContactCard } from '@/components/contact-card'
 import { SocialCard } from '@/components/social-card'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
 export default function HomePage() {
-  const data: Data = LINKS_DATA
+  const data: Data = SOCIAL_DATA
 
   return (
     <main className='flex items-center flex-col mx-auto w-full justify-center mt-16 mb-12 px-8'>

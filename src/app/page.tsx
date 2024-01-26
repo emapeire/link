@@ -1,12 +1,9 @@
-import { SOCIAL_DATA } from '@/data/social_data'
-import { type Data } from '@/types'
 import { ContactCard } from '@/components/contact-card'
 import { SocialCard } from '@/components/social-card'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { data } from '@/constants'
 
 export default function HomePage() {
-  const data: Data = SOCIAL_DATA
-
   return (
     <main className='flex items-center flex-col mx-auto w-full justify-center mt-16 mb-12 px-8'>
       <Avatar className='h-28 w-28'>

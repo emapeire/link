@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import { type Links } from '@/types'
+import Image from 'next/image'
 
 export function ContactCard({ title, url, icon }: Links) {
   return (
@@ -10,14 +10,16 @@ export function ContactCard({ title, url, icon }: Links) {
       target='_blank'
       rel='noopener noreferrer'
     >
-      <Image
-        priority
-        className='invert'
-        alt={title}
-        src={icon}
-        width={32}
-        height={32}
-      />
+      <div className='hover:scale-110 transition-all ease-in-out'>
+        <Image
+          priority
+          className='invert'
+          alt={title}
+          src={icon}
+          width={32}
+          height={32}
+        />
+      </div>
     </a>
   )
 }

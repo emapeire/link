@@ -14,6 +14,7 @@ export function Head({ metadata }: { metadata: Metadata }) {
       <meta name='msapplication-TileColor' content='#000000' />
       <meta name='theme-color' content='#000000'></meta>
 
+      <link rel='icon' type='image/x-icon' href='/favicon.ico' />
       <link
         rel='apple-touch-icon'
         sizes='180x180'

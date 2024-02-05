@@ -7,7 +7,7 @@ import { Footer } from '@/components/footer'
 import '@/styles/globals.css'
 
 const metadata: Metadata = {
-  title: 'Social | Emanuel Peire',
+  title: 'Link | Emanuel Peire',
   description: 'Links to my social media'
 }
 

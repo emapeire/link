@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { type Links } from '@/types'
 
 export function ContactCard({ title, url, icon }: Links) {
@@ -11,14 +10,7 @@ export function ContactCard({ title, url, icon }: Links) {
       rel='noopener noreferrer'
       className='hover:scale-110 transition-all ease-in-out'
     >
-      <Image
-        priority
-        className='invert'
-        alt={title}
-        src={icon}
-        width={30}
-        height={30}
-      />
+      {icon({ className: 'size-10' })}
     </a>
   )
 }

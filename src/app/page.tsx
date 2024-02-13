@@ -6,26 +6,26 @@ import { data } from '@/constants'
 export default function HomePage() {
   return (
     <main className='flex items-center flex-col mx-auto w-full justify-center my-16 px-8'>
-      <Avatar className='h-28 w-28'>
+      <Avatar className='size-32 shadow-lg shadow-white/10'>
         <AvatarImage alt={data.name} src={data.avatar} />
         <AvatarFallback>{data.initials}</AvatarFallback>
       </Avatar>
 
       <section className='flex flex-col text-center text-white'>
-        <h1 className='font-bold mt-8 mb-2 text-xl'>{data.name}</h1>
-        <p className='mx-auto max-w-xl px-4 text-sm font-semibold text-slate-300'>
+        <h1 className='font-bold mt-8 mb-2 text-2xl'>{data.name}</h1>
+        <p className='mx-auto max-w-xl px-4 text-base font-semibold text-slate-300'>
           {data.about}
         </p>
       </section>
 
-      <section className='flex items-center gap-6 my-8'>
-        {data.contacts.map((social) => (
-          <ContactCard key={social.url} {...social} />
+      <section className='flex items-center gap-8 my-8'>
+        {data.contacts.map((contact) => (
+          <ContactCard key={contact.url} {...contact} />
         ))}
       </section>
 
-      {data.socials.map((contact) => (
-        <SocialCard key={contact.url} {...contact} />
+      {data.socials.map((social) => (
+        <SocialCard key={social.url} {...social} />
       ))}
     </main>
   )

@@ -5,7 +5,7 @@ import { data } from '@/constants'
 
 export default function HomePage() {
   return (
-    <main className='flex items-center flex-col mx-auto w-full justify-center mt-16 mb-8 px-8'>
+    <main className='flex items-center flex-col mx-auto w-full justify-center my-16 px-8'>
       <Avatar className='h-28 w-28'>
         <AvatarImage alt={data.name} src={data.avatar} />
         <AvatarFallback>{data.initials}</AvatarFallback>
@@ -13,7 +13,7 @@ export default function HomePage() {
 
       <section className='flex flex-col text-center text-white'>
         <h1 className='font-bold mt-8 mb-2 text-xl'>{data.name}</h1>
-        <p className='mx-auto max-w-xl px-4 text-sm font-semibold text-slate-400'>
+        <p className='mx-auto max-w-xl px-4 text-sm font-semibold text-slate-300'>
           {data.about}
         </p>
       </section>

@@ -37,7 +37,7 @@ export const SOCIAL_DATA = {
       icon: GithubIcon
     },
     {
-      title: 'X',
+      title: 'The everything app',
       url: 'https://x.com/emapeire',
       icon: XIcon
     },

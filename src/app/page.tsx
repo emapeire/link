@@ -6,7 +6,7 @@ import { data } from '@/constants'
 export default function HomePage() {
   return (
     <main className='flex items-center flex-col mx-auto w-full justify-center pt-16 px-8'>
-      <Avatar className='size-32 shadow-lg shadow-white/10'>
+      <Avatar className='size-32 shadow-xl shadow-white/5'>
         <AvatarImage alt={data.name} src={data.avatar} />
         <AvatarFallback>{data.initials}</AvatarFallback>
       </Avatar>
@@ -20,7 +20,7 @@ export default function HomePage() {
         </p>
       </section>
 
-      <section className='flex items-center gap-8 my-8'>
+      <section className='flex items-center gap-6 my-8'>
         {data.contacts.map((contact) => (
           <ContactCard key={contact.url} {...contact} />
         ))}

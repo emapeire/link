@@ -11,9 +11,11 @@ export default function HomePage() {
         <AvatarFallback>{data.initials}</AvatarFallback>
       </Avatar>
 
-      <section className='flex flex-col text-center text-white'>
-        <h1 className='font-bold mt-8 mb-2 text-2xl'>{data.name}</h1>
-        <p className='mx-auto max-w-xl px-4 text-base font-semibold text-slate-300'>
+      <section className='flex flex-col items-center justify-center'>
+        <h1 className='font-bold mt-8 mb-2 text-2xl text-white text-center'>
+          {data.name}
+        </h1>
+        <p className='mx-auto max-w-xl px-4 text-base font-semibold text-slate-300 md:text-pretty text-center'>
           {data.about}
         </p>
       </section>

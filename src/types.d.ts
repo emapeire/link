@@ -10,5 +10,5 @@ export interface Data {
 export interface Links {
   title: string
   url: string
-  icon: string
+  icon: React.FC<React.SVGProps<SVGSVGElement>>
 }

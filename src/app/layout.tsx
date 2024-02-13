@@ -3,7 +3,6 @@ import { type Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { Head } from '@/components/head'
 import { Footer } from '@/components/footer'
-import { ThemeProvider } from '@/components/theme-provider'
 import '@/styles/globals.css'
 
 const metadata: Metadata = {
@@ -20,14 +19,7 @@ export default function RootLayout({
     <html lang='en' className={`${GeistSans.className} dark`}>
       <Head metadata={metadata} />
       <body>
-        <ThemeProvider
-          attribute='class'
-          defaultTheme='system'
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+        {children}
         <Footer />
       </body>
     </html>

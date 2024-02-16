@@ -4,7 +4,7 @@ export function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className='flex items-center font-semibold justify-evenly text-slate-300 text-center text-sm mt-12 mb-16 border border-white/5 bg-white/10 shadow-xl shadow-white/5 rounded-xl md:mx-[30rem] mx-[7rem] py-4'>
+    <footer className='flex items-center py-4 mt-12 mb-16 w-full max-w-xl font-semibold justify-evenly text-gray-300 text-center text-sm border border-white/5 bg-white/10 shadow-xl shadow-white/5 rounded-xl'>
       {`${year}`}
       <span>|</span>
       <span className='hover:underline hover:text-blue-400'>

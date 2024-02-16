@@ -1,6 +1,7 @@
 import { ContactCard } from '@/components/contact-card'
 import { SocialCard } from '@/components/social-card'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Footer } from '@/components/footer'
 import { data } from '@/constants'
 
 export default function HomePage() {
@@ -29,6 +30,7 @@ export default function HomePage() {
       {data.socials.map((social) => (
         <SocialCard key={social.url} {...social} />
       ))}
+      <Footer />
     </main>
   )
 }

@@ -3,7 +3,6 @@ import { type Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { Head } from '@/components/head'
-import { Footer } from '@/components/footer'
 import '@/styles/globals.css'
 
 const metadata: Metadata = {
@@ -22,10 +21,7 @@ export default function RootLayout({
       className={`${GeistSans.variable} ${GeistMono.variable} dark`}
     >
       <Head metadata={metadata} />
-      <body>
-        {children}
-        <Footer />
-      </body>
+      <body>{children}</body>
     </html>
   )
 }

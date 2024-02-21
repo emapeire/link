@@ -37,7 +37,7 @@ export default function HomePage() {
       <h2 className='font-semibold mt-8 mb-4 text-lg text-white text-center'>
         Community Network
       </h2>
-      {data.community.map((community) => (
+      {data.communities.map((community) => (
         <SocialCard key={community.url} {...community} />
       ))}
       <Footer />

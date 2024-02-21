@@ -59,7 +59,7 @@ export const SOCIAL_DATA = {
       icon: TelegramIcon
     }
   ],
-  community: [
+  communities: [
     {
       title: 'Next.js Argentina',
       url: 'https://dub.sh/nextjsargentina',

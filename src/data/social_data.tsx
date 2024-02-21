@@ -1,11 +1,13 @@
-import { DevtoIcon } from '@/icons/devto'
-import { GithubIcon } from '@/icons/github'
-import { LinkedinIcon } from '@/icons/linkedin'
-import { MailIcon } from '@/icons/mail'
-import { TelegramIcon } from '@/icons/telegram'
-import { WebIcon } from '@/icons/web'
-import { WhatsappIcon } from '@/icons/whatsapp'
-import { XIcon } from '@/icons/x'
+import { DevtoIcon } from '@/components/icons/devto'
+import { DiscordIcon } from '@/components/icons/discord'
+import { GithubIcon } from '@/components/icons/github'
+import { LinkedinIcon } from '@/components/icons/linkedin'
+import { MailIcon } from '@/components/icons/mail'
+import { NextJSArgIcon } from '@/components/icons/nextjsargentina'
+import { TelegramIcon } from '@/components/icons/telegram'
+import { WebIcon } from '@/components/icons/web'
+import { WhatsappIcon } from '@/components/icons/whatsapp'
+import { XIcon } from '@/components/icons/x'
 
 export const SOCIAL_DATA = {
   name: 'Emanuel Peire',
@@ -55,6 +57,18 @@ export const SOCIAL_DATA = {
       title: 'Telegram',
       url: 'https://t.me/emapeire',
       icon: TelegramIcon
+    }
+  ],
+  community: [
+    {
+      title: 'Next.js Argentina',
+      url: 'https://dub.sh/nextjsargentina',
+      icon: NextJSArgIcon
+    },
+    {
+      title: 'Discord Community',
+      url: 'https://dub.sh/dsnextjsarg',
+      icon: DiscordIcon
     }
   ]
 }

@@ -27,8 +27,18 @@ export default function HomePage() {
         ))}
       </section>
 
+      <h2 className='font-semibold my-4 text-lg text-white text-center'>
+        Personal Network
+      </h2>
       {data.socials.map((social) => (
         <SocialCard key={social.url} {...social} />
+      ))}
+
+      <h2 className='font-semibold mt-8 mb-4 text-lg text-white text-center'>
+        Community Network
+      </h2>
+      {data.community.map((community) => (
+        <SocialCard key={community.url} {...community} />
       ))}
       <Footer />
     </main>

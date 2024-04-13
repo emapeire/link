@@ -16,7 +16,7 @@ export default function HomePage() {
         <h1 className='font-bold mt-8 mb-2 text-2xl text-white text-center'>
           {data.name}
         </h1>
-        <p className='mx-auto max-w-xl px-4 text-base font-semibold text-gray-300 md:text-pretty text-center'>
+        <p className='mx-auto max-w-xl px-4 text-base font-semibold text-neutral-300 md:text-pretty text-center'>
           {data.about}
         </p>
       </section>

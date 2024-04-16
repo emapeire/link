@@ -6,7 +6,7 @@ export function SocialCard({ title, url, icon }: Links) {
       href={url}
       target='_blank'
       rel='noopener noreferrer'
-      className='flex items-center p-1.5 w-full border border-white/5 shadow-sm shadow-white/10 rounded-xl hover:scale-105 transition-all ease-in-out bg-white/10 hover:bg-white/20 mb-4 max-w-2xl'
+      className='flex items-center p-1.5 w-full border shadow rounded-xl hover:scale-105 transition-all ease-in-out bg-neutral-800/30 hover:bg-neutral-800 mb-4 max-w-2xl'
     >
       <div className='flex w-full items-center'>
         {icon({ className: 'size-10' })}

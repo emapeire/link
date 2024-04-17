@@ -3,7 +3,9 @@ import { type Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { Head } from '@/components/head'
+import { ThemeProvider } from '@/components/theme-provider'
 import '@/styles/globals.css'
+import { Footer } from '@/components/footer'
 
 const metadata: Metadata = {
   title: 'Link | Emanuel Peire',
@@ -18,10 +20,21 @@ export default function RootLayout({
   return (
     <html
       lang='en'
-      className={`${GeistSans.variable} ${GeistMono.variable} dark`}
+      className={`${GeistSans.variable} ${GeistMono.variable}`}
+      suppressHydrationWarning
     >
       <Head metadata={metadata} />
-      <body>{children}</body>
+      <body>
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='system'
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+          <Footer />
+        </ThemeProvider>
+      </body>
     </html>
   )
 }

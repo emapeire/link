@@ -4,6 +4,7 @@ import { GithubIcon } from '@/components/icons/github'
 import { LinkedinIcon } from '@/components/icons/linkedin'
 import { MailIcon } from '@/components/icons/mail'
 import { NextJSArgIcon } from '@/components/icons/nextjsargentina'
+import { ResumeIcon } from '@/components/icons/resume'
 import { TelegramIcon } from '@/components/icons/telegram'
 import { WebIcon } from '@/components/icons/web'
 import { WhatsappIcon } from '@/components/icons/whatsapp'
@@ -20,6 +21,11 @@ export const SOCIAL_DATA = {
       title: 'Website',
       url: 'https://emapeire.xyz',
       icon: WebIcon
+    },
+    {
+      title: 'Resume',
+      url: 'https://cv.emapeire.xyz',
+      icon: ResumeIcon
     },
     {
       title: 'Email',

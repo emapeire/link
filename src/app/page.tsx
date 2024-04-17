@@ -12,7 +12,7 @@ export default function HomePage() {
         target='_blank'
         rel='noopener noreferrer'
       >
-        <Avatar className='size-28 shadow hover:scale-105 transition-all ease-in-out duration-300'>
+        <Avatar className='size-28 shadow'>
           <AvatarImage alt={data.name} src={data.avatar} />
           <AvatarFallback>{data.initials}</AvatarFallback>
         </Avatar>
@@ -22,12 +22,12 @@ export default function HomePage() {
         <h1 className='font-bold mt-8 mb-2 text-3xl text-white text-center'>
           {data.name}
         </h1>
-        <p className='mx-auto max-w-xl px-4 text-sm font-semibold text-neutral-300 md:text-pretty text-center'>
+        <p className='mx-auto max-w-xl px-4 text-sm font-mono font-semibold text-neutral-300 md:text-pretty text-center'>
           {data.about}
         </p>
       </section>
 
-      <section className='flex items-center gap-6 my-8'>
+      <section className='flex items-center gap-4 my-8'>
         {data.contacts.map((contact) => (
           <ContactCard key={contact.url} {...contact} />
         ))}

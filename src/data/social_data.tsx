@@ -13,8 +13,8 @@ export const SOCIAL_DATA = {
   name: 'Emanuel Peire',
   initials: 'EP',
   avatar: '/images/avatar.png',
-  about: `Frontend Engineer, OSS Developer, LLMs technical researcher and DX Architect.
-    Always influenced by design. Based in Rosario, Argentina 🇦🇷`,
+  about: `Frontend Engineer, Developer Relations and AI research enthusiast. Always influenced by design.
+  Based in Rosario, Argentina 🇦🇷`,
   contacts: [
     {
       title: 'Website',

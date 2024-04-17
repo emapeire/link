@@ -10,7 +10,7 @@ export function SocialCard({ title, url, icon }: Links) {
     >
       <div className='flex w-full items-center'>
         {icon({ className: 'size-8' })}
-        <h2 className='flex justify-center font-semibold font-mono w-full dark:text-white text-black -ml-10'>
+        <h2 className='flex justify-center font-semibold font-mono w-full dark:text-neutral-100 text-neutral-800 -ml-10'>
           {title}
         </h2>
       </div>

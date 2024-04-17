@@ -12,7 +12,9 @@ export const NextJSArgIcon = ({ ...props }) => {
       viewBox='0 0 1440 1440'
       enableBackground='new 0 0 1440 1440'
       xmlSpace='preserve'
-      className='rounded size-8'
+      className={`rounded border-0 dark:border border-white ${
+        props.className || ''
+      }`}
     >
       <path
         fill='#000000'

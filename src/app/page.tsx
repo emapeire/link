@@ -12,7 +12,7 @@ export default function HomePage() {
         target='_blank'
         rel='noopener noreferrer'
       >
-        <Avatar className='size-28 shadow'>
+        <Avatar className='size-28 shadow border'>
           <AvatarImage alt={data.name} src={data.avatar} />
           <AvatarFallback>{data.initials}</AvatarFallback>
         </Avatar>

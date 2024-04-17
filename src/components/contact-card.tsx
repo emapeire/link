@@ -8,9 +8,9 @@ export function ContactCard({ title, url, icon }: Links) {
       href={url}
       target='_blank'
       rel='noopener noreferrer'
-      className='hover:scale-105 transition-all ease-in-out duration-300 shadow border rounded-lg p-1.5 dark:bg-black/90 bg-white/10 hover:bg-neutral-100 dark:hover:bg-neutral-800'
+      className='transition-all ease-in-out shadow border rounded-lg p-2 dark:bg-black/90 bg-white/10 hover:bg-neutral-100 dark:hover:bg-neutral-800'
     >
-      {icon({ className: 'size-8' })}
+      {icon({ className: 'h-[1.5rem] w-[1.5rem]' })}
     </a>
   )
 }

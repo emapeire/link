@@ -45,14 +45,14 @@ export const SOCIAL_DATA = {
       icon: GithubIcon
     },
     {
-      title: 'The everything app',
-      url: 'https://x.com/emapeire',
-      icon: XIcon
-    },
-    {
       title: 'LinkedIn',
       url: 'https://www.linkedin.com/in/emanuelpeire',
       icon: LinkedinIcon
+    },
+    {
+      title: 'The everything app',
+      url: 'https://x.com/emapeire',
+      icon: XIcon
     },
     {
       title: 'Dev Community',

@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { toast } from 'sonner'
 import { CopyIcon, CheckIcon } from 'lucide-react'
+import { Tooltip, TooltipTrigger, TooltipContent } from './ui/tooltip'
 import { Button } from './ui/button'
 import { type Links } from '@/types'
 import clsx from 'clsx'
@@ -26,31 +27,38 @@ export function CopyToClipboard({ url }: { url: Links['url'] }) {
   }
 
   return (
-    <Button
-      variant='ghost'
-      size='icon'
-      className='relative size-4 disabled:opacity-100 disabled:cursor-not-allowed'
-      onClick={copyToClipboard}
-      disabled={copied}
-    >
-      <CopyIcon
-        className={clsx(
-          'absolute inset-0 transition-opacity duration-300 size-4',
-          {
-            'opacity-100': !copied,
-            'opacity-0': copied
-          }
-        )}
-      />
-      <CheckIcon
-        className={clsx(
-          'absolute inset-0 transition-opacity duration-300 size-4',
-          {
-            'opacity-0': !copied,
-            'opacity-100': copied
-          }
-        )}
-      />
-    </Button>
+    <Tooltip>
+      <TooltipTrigger asChild>
+        <Button
+          variant='ghost'
+          size='icon'
+          onClick={copyToClipboard}
+          disabled={copied}
+          className='relative size-4 disabled:opacity-100 disabled:cursor-not-allowed'
+        >
+          <CopyIcon
+            className={clsx(
+              'absolute inset-0 transition-opacity duration-300 size-4',
+              {
+                'opacity-100': !copied,
+                'opacity-0': copied
+              }
+            )}
+          />
+          <CheckIcon
+            className={clsx(
+              'absolute inset-0 transition-opacity duration-300 size-4',
+              {
+                'opacity-0': !copied,
+                'opacity-100': copied
+              }
+            )}
+          />
+        </Button>
+      </TooltipTrigger>
+      <TooltipContent>
+        <p>Copy</p>
+      </TooltipContent>
+    </Tooltip>
   )
 }

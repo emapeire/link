@@ -5,6 +5,7 @@ import { GeistMono } from 'geist/font/mono'
 import { Head } from '@/components/head'
 import { ThemeProvider } from '@/components/theme-provider'
 import { Toaster } from '@/components/ui/sonner'
+import { TooltipProvider } from '@/components/ui/tooltip'
 import { Footer } from '@/components/footer'
 import '@/styles/globals.css'
 
@@ -26,15 +27,17 @@ export default function RootLayout({
     >
       <Head metadata={metadata} />
       <body>
-        <ThemeProvider
-          attribute='class'
-          defaultTheme='system'
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-          <Footer />
-        </ThemeProvider>
+        <TooltipProvider>
+          <ThemeProvider
+            attribute='class'
+            defaultTheme='system'
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+            <Footer />
+          </ThemeProvider>
+        </TooltipProvider>
         <Toaster />
       </body>
     </html>

@@ -14,7 +14,9 @@ export default function HomePage() {
       >
         <Avatar className='size-28 shadow border'>
           <AvatarImage alt={data.name} src={data.avatar} />
-          <AvatarFallback>{data.initials}</AvatarFallback>
+          <AvatarFallback className='font-mono font-bold'>
+            {data.initials}
+          </AvatarFallback>
         </Avatar>
       </a>
 

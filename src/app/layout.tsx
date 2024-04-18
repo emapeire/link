@@ -7,6 +7,7 @@ import { ThemeProvider } from '@/components/theme-provider'
 import { Toaster } from '@/components/ui/sonner'
 import { TooltipProvider } from '@/components/ui/tooltip'
 import { Footer } from '@/components/footer'
+import { cn } from '@/lib/utils'
 import '@/styles/globals.css'
 
 const metadata: Metadata = {
@@ -22,7 +23,11 @@ export default function RootLayout({
   return (
     <html
       lang='en'
-      className={`${GeistSans.variable} ${GeistMono.variable}`}
+      className={cn(
+        'min-h-screen bg-background font-sans antialiased',
+        GeistSans.variable,
+        GeistMono.variable
+      )}
       suppressHydrationWarning
     >
       <Head metadata={metadata} />

@@ -18,10 +18,7 @@ export function Head({ metadata }: { metadata: Metadata }) {
       />
       <meta property='og:type' content='website' />
       <meta property='og:url' content='https://link.emapeire.xyz' />
-      <meta
-        property='og:image'
-        content='https://link.emapeire.xyz/og-image.png'
-      />
+      <meta property='og:image' content='/images/og-image.png' />
 
       <meta name='twitter:card' content='summary_large_image' />
       <meta name='twitter:creator' content='@emapeire' />
@@ -30,10 +27,7 @@ export function Head({ metadata }: { metadata: Metadata }) {
         name='twitter:description'
         content={metadata.description?.toString()}
       />
-      <meta
-        name='twitter:image'
-        content='https://link.emapeire.xyz/og-image.png'
-      />
+      <meta name='twitter:image' content='/images/og-image.png' />
 
       <meta name='msapplication-TileColor' content='#000000' />
       <meta name='theme-color' content='#000000'></meta>

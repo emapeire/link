@@ -30,7 +30,7 @@ export function CopyToClipboard({ url }: { url: Links['url'] }) {
     <Tooltip>
       <TooltipTrigger asChild>
         <Button
-          variant='ghost'
+          variant='link'
           size='icon'
           onClick={copyToClipboard}
           disabled={copied}

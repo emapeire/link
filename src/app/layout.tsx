@@ -27,18 +27,18 @@ export default function RootLayout({
     >
       <Head metadata={metadata} />
       <body>
-        <TooltipProvider>
-          <ThemeProvider
-            attribute='class'
-            defaultTheme='system'
-            enableSystem
-            disableTransitionOnChange
-          >
+        <ThemeProvider
+          attribute='class'
+          defaultTheme='system'
+          enableSystem
+          disableTransitionOnChange
+        >
+          <TooltipProvider>
             {children}
             <Footer />
-          </ThemeProvider>
-        </TooltipProvider>
-        <Toaster />
+          </TooltipProvider>
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   )

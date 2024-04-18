@@ -18,7 +18,7 @@ export const SOCIAL_DATA = {
   Based in Rosario, Argentina 🇦🇷`,
   contacts: [
     {
-      title: 'Website',
+      title: 'Portfolio',
       url: 'https://emapeire.xyz',
       icon: WebIcon
     },

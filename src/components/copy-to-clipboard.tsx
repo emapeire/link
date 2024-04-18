@@ -5,6 +5,7 @@ import { toast } from 'sonner'
 import { CopyIcon, CheckIcon } from 'lucide-react'
 import { Button } from './ui/button'
 import { type Links } from '@/types'
+import clsx from 'clsx'
 
 export function CopyToClipboard({ url }: { url: Links['url'] }) {
   const [copied, setCopied] = useState(false)
@@ -28,11 +29,28 @@ export function CopyToClipboard({ url }: { url: Links['url'] }) {
     <Button
       variant='ghost'
       size='icon'
-      className='size-4 disabled:opacity-100 disabled:cursor-not-allowed'
+      className='relative size-4 disabled:opacity-100 disabled:cursor-not-allowed'
       onClick={copyToClipboard}
       disabled={copied}
     >
-      {copied ? <CheckIcon /> : <CopyIcon />}
+      <CopyIcon
+        className={clsx(
+          'absolute inset-0 transition-opacity duration-300 size-4',
+          {
+            'opacity-100': !copied,
+            'opacity-0': copied
+          }
+        )}
+      />
+      <CheckIcon
+        className={clsx(
+          'absolute inset-0 transition-opacity duration-300 size-4',
+          {
+            'opacity-0': !copied,
+            'opacity-100': copied
+          }
+        )}
+      />
     </Button>
   )
 }

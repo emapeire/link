@@ -16,13 +16,13 @@ export function CopyToClipboard({ url }: { url: Links['url'] }) {
       .writeText(url)
       .then(() => {
         setCopied(true)
-        toast.success('Copied to clipboard.')
+        toast.success('Copied to clipboard')
         setTimeout(() => {
           setCopied(false)
         }, 2000)
       })
       .catch((error) => {
-        if (error) toast.error('Error copying to clipboard.')
+        if (error) toast.error('Error copying to clipboard')
       })
   }
 

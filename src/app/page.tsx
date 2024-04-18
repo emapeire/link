@@ -1,9 +1,4 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger
-} from '@/components/ui/tooltip'
 import { ModeToggle } from '@/components/mode-toggle'
 import { ContactCard } from '@/components/contact-card'
 import { SocialCard } from '@/components/social-card'
@@ -28,14 +23,7 @@ export default function HomePage() {
           <h1 className='font-bold text-3xl dark:text-white text-black text-center'>
             {data.name}
           </h1>
-          <Tooltip>
-            <TooltipTrigger>
-              <ModeToggle />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>Toggle mode</p>
-            </TooltipContent>
-          </Tooltip>
+          <ModeToggle />
         </div>
         <p className='mx-auto max-w-xl px-4 text-sm font-mono font-semibold dark:text-neutral-300 text-neutral-700 md:text-pretty text-center'>
           {data.about}

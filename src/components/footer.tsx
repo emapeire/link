@@ -8,7 +8,7 @@ export function Footer() {
         <span>|</span>
         <section>
           <span>By</span>{' '}
-          <span className='hover:underline hover:text-neutral-100 transition underline-offset-2'>
+          <span className='hover:underline hover:text-neutral-100 transition-all underline-offset-2'>
             <a
               href='https://x.com/emapeire'
               target='_blank'

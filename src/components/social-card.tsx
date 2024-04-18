@@ -12,12 +12,12 @@ export function SocialCard({ title, url, icon }: Links) {
       >
         <div className='flex w-full items-center'>
           {icon({ className: 'size-8' })}
-          <h2 className='flex justify-center font-semibold font-mono w-full dark:text-neutral-100 text-neutral-800'>
+          <h2 className='flex justify-center font-semibold font-mono w-full dark:text-neutral-100 text-neutral-800 me-7'>
             {title}
           </h2>
         </div>
       </a>
-      <div className='absolute flex right-2 top-4 items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+      <div className='absolute flex right-3 top-4 items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
         <CopyToClipboard url={url} />
       </div>
     </div>

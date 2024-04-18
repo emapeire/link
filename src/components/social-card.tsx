@@ -3,7 +3,7 @@ import { type Links } from '@/types'
 
 export function SocialCard({ title, url, icon }: Links) {
   return (
-    <div className='group relative flex items-center justify-between w-full border shadow rounded-lg hover:scale-105 transition-all ease-in-out duration-300 dark:bg-black/90 bg-white/10 hover:bg-neutral-100 dark:hover:bg-neutral-800 mb-4 max-w-lg'>
+    <div className='group relative flex items-center justify-between w-full border shadow rounded-lg hover:scale-105 transition-all ease-in-out duration-300 dark:bg-black/90 bg-white/10 hover:bg-neutral-100 dark:hover:bg-neutral-800 mb-4 max-w-lg cursor-pointer'>
       <a
         href={url}
         target='_blank'

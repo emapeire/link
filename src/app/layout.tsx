@@ -4,8 +4,9 @@ import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
 import { Head } from '@/components/head'
 import { ThemeProvider } from '@/components/theme-provider'
-import '@/styles/globals.css'
+import { Toaster } from '@/components/ui/sonner'
 import { Footer } from '@/components/footer'
+import '@/styles/globals.css'
 
 const metadata: Metadata = {
   title: 'Link | Emanuel Peire',
@@ -34,6 +35,7 @@ export default function RootLayout({
           {children}
           <Footer />
         </ThemeProvider>
+        <Toaster />
       </body>
     </html>
   )

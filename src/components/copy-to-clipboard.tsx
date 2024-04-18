@@ -1,8 +1,9 @@
 'use client'
 
 import { useState } from 'react'
-import { Button } from './ui/button'
+import { toast } from 'sonner'
 import { CopyIcon, CheckIcon } from 'lucide-react'
+import { Button } from './ui/button'
 import { type Links } from '@/types'
 
 export function CopyToClipboard({ url }: { url: Links['url'] }) {
@@ -13,13 +14,13 @@ export function CopyToClipboard({ url }: { url: Links['url'] }) {
       .writeText(url)
       .then(() => {
         setCopied(true)
-        console.log('Copied to clipboard')
+        toast.success('Copied to clipboard.')
         setTimeout(() => {
           setCopied(false)
         }, 2000)
       })
       .catch((error) => {
-        console.error('Error copying to clipboard', error)
+        if (error) toast.error('Error copying to clipboard.')
       })
   }
 
@@ -27,8 +28,9 @@ export function CopyToClipboard({ url }: { url: Links['url'] }) {
     <Button
       variant='ghost'
       size='icon'
-      className='size-4'
+      className='size-4 disabled:opacity-100 disabled:cursor-not-allowed'
       onClick={copyToClipboard}
+      disabled={copied}
     >
       {copied ? <CheckIcon /> : <CopyIcon />}
     </Button>

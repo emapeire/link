@@ -32,7 +32,7 @@ export function Head({ metadata }: { metadata: Metadata }) {
       />
       <meta
         name='twitter:image'
-        content='https://cv.emanuelpeire.xyz/og-image.png'
+        content='https://link.emapeire.xyz/og-image.png'
       />
 
       <meta name='msapplication-TileColor' content='#000000' />

@@ -3,7 +3,7 @@ export function Footer() {
 
   return (
     <footer className='flex items-center justify-center mb-8 mt-24 mx-auto w-full'>
-      <div className='flex items-center justify-center space-x-4 font-medium font-mono dark:text-neutral-300 text-neutral-800 text-sm'>
+      <div className='flex items-center justify-center space-x-4 font-medium dark:text-neutral-300 text-neutral-800 text-sm'>
         <span>© {year}</span>
         <span>—</span>
         <section>

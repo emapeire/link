@@ -2,17 +2,18 @@ export function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className='flex flex-col items-center justify-center mb-8 mt-28 mx-auto w-full max-w-[16rem] font-semibold font-mono dark:text-neutral-300 text-neutral-700 text-center text-xs'>
-      <div className='flex items-center justify-center space-x-6'>
-        <span>{`${year}`}</span>
-        <span>|</span>
+    <footer className='flex items-center justify-center mb-8 mt-24 mx-auto w-full'>
+      <div className='flex items-center justify-center space-x-4 font-medium font-mono dark:text-neutral-300 text-neutral-800 text-sm'>
+        <span>© {year}</span>
+        <span>—</span>
         <section>
           <span>By</span>{' '}
-          <span className='hover:underline hover:text-neutral-900 dark:hover:text-neutral-100 transition-all underline-offset-2'>
+          <span className='hover:text-neutral-900 dark:hover:text-neutral-100 transition-all'>
             <a
               href='https://x.com/emapeire'
               target='_blank'
               rel='noopener noreferrer'
+              className='hover:underline underline-offset-2'
             >
               @emapeire
             </a>

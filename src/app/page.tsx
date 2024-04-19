@@ -1,6 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { ModeToggle } from '@/components/mode-toggle'
-import { ContactCard } from '@/components/contact-card'
+import { ButtonContact } from '@/components/button-contact'
 import { SocialCard } from '@/components/social-card'
 import { data } from '@/constants'
 
@@ -35,7 +35,7 @@ export default function HomePage() {
 
       <section className='flex items-center gap-4 my-8'>
         {data.contacts.map((contact) => (
-          <ContactCard key={contact.url} {...contact} />
+          <ButtonContact key={contact.url} {...contact} />
         ))}
       </section>
 

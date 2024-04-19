@@ -11,6 +11,7 @@ export default function HomePage() {
         href='https://github.com/emapeire'
         target='_blank'
         rel='noopener noreferrer'
+        className='rounded-full'
       >
         <Avatar className='size-28 shadow border'>
           <AvatarImage alt={data.name} src={data.avatar} />

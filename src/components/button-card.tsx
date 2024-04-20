@@ -17,7 +17,7 @@ export function ButtonCard({ title, url, icon }: Links) {
           </h2>
         </div>
       </a>
-      <div className='absolute flex right-3 top-4 items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
+      <div className='absolute group-hover:flex right-3 top-4 items-center hidden opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
         <CopyToClipboard url={url} />
       </div>
     </div>

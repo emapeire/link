@@ -8,7 +8,7 @@ export function ButtonCard({ title, url, icon }: Links) {
         href={url}
         target='_blank'
         rel='noopener noreferrer'
-        className='flex items-center w-full p-2'
+        className='flex items-center w-full p-2 rounded-lg'
       >
         <div className='flex w-full items-center'>
           {icon({ className: 'size-8' })}

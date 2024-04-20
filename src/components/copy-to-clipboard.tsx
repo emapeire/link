@@ -2,11 +2,11 @@
 
 import { useState } from 'react'
 import { toast } from 'sonner'
-import { CopyIcon, CheckIcon } from 'lucide-react'
 import { Tooltip, TooltipTrigger, TooltipContent } from './ui/tooltip'
 import { Button } from './ui/button'
-import { type Links } from '@/types'
+import { CopyIcon, CheckIcon } from 'lucide-react'
 import clsx from 'clsx'
+import { type Links } from '@/types'
 
 export function CopyToClipboard({ url }: { url: Links['url'] }) {
   const [copied, setCopied] = useState(false)

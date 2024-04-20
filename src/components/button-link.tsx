@@ -6,7 +6,12 @@ export function ButtonLink({ title, url, icon }: Links) {
   return (
     <Tooltip>
       <TooltipTrigger asChild>
-        <Button variant='outline' size='icon' className='shadow rounded-lg'>
+        <Button
+          variant='outline'
+          size='icon'
+          className='shadow rounded-lg'
+          asChild
+        >
           <a
             aria-label={`${title} link`}
             key={url}

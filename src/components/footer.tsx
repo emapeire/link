@@ -13,7 +13,7 @@ export function Footer() {
               href='https://x.com/emapeire'
               target='_blank'
               rel='noopener noreferrer'
-              className='hover:underline underline-offset-2'
+              className='hover:underline underline-offset-4'
             >
               @emapeire
             </a>

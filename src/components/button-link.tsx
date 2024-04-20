@@ -2,11 +2,11 @@ import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip'
 import { Button } from './ui/button'
 import { type Links } from '@/types'
 
-export function ButtonContact({ title, url, icon }: Links) {
+export function ButtonLink({ title, url, icon }: Links) {
   return (
     <Tooltip>
       <TooltipTrigger asChild>
-        <Button variant='outline' size='icon' className='shadow'>
+        <Button variant='outline' size='icon' className='shadow rounded-lg'>
           <a
             aria-label={`${title} link`}
             key={url}

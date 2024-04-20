@@ -34,7 +34,7 @@ export function CopyToClipboard({ url }: { url: Links['url'] }) {
           size='icon'
           onClick={copyToClipboard}
           disabled={copied}
-          className='relative size-4 disabled:opacity-100 disabled:cursor-not-allowed'
+          className='relative size-4 disabled:opacity-100'
         >
           <CopyIcon
             className={clsx(

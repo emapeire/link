@@ -28,9 +28,9 @@ export default function HomePage() {
           </h1>
           <ModeToggle />
         </div>
-        <p className='mx-auto max-w-lg px-4 text-sm font-mono font-semibold dark:text-neutral-300 text-neutral-700 md:text-pretty text-center'>
+        <h2 className='mx-auto max-w-md px-4 text-sm font-mono font-semibold dark:text-neutral-300 text-neutral-700 md:text-pretty text-center'>
           {data.about}
-        </p>
+        </h2>
       </section>
 
       <section className='flex items-center gap-4 my-8'>
@@ -39,16 +39,16 @@ export default function HomePage() {
         ))}
       </section>
 
-      <h2 className='font-semibold my-4 text-xl dark:text-white text-black text-center'>
+      <h3 className='font-semibold my-4 text-xl dark:text-white text-black text-center'>
         Personal Network
-      </h2>
+      </h3>
       {data.socials.map((social) => (
         <ButtonCard key={social.url} {...social} />
       ))}
 
-      <h2 className='font-semibold mt-8 mb-4 text-xl dark:text-white text-black text-center'>
+      <h3 className='font-semibold mt-8 mb-4 text-xl dark:text-white text-black text-center'>
         Community Network
-      </h2>
+      </h3>
       {data.communities.map((community) => (
         <ButtonCard key={community.url} {...community} />
       ))}

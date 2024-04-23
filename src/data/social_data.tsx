@@ -13,7 +13,7 @@ import { XIcon } from '@/components/icons/x'
 export const SOCIAL_DATA = {
   name: 'Emanuel Peire',
   initials: 'EP',
-  avatar: '/images/avatar.webp',
+  avatar: '/assets/avatar.webp',
   about: `Frontend Engineer, Developer Relations and AI research enthusiast. Always influenced by design.
   Based in Rosario, Argentina 🇦🇷`,
   contacts: [

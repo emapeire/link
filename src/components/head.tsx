@@ -16,7 +16,7 @@ export function Head({ metadata }: { metadata: Metadata }) {
         property='og:description'
         content={metadata.description?.toString()}
       />
-      <meta property='og:url' content='https://emapeire.xyz' />
+      <meta property='og:url' content='https://link.emapeire.xyz' />
       <meta
         property='og:image'
         content='https://link.emapeire.xyz/opengraph-image.png'

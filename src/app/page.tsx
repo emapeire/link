@@ -28,7 +28,7 @@ export default function HomePage() {
           </h1>
           <ModeToggle />
         </div>
-        <h2 className='mx-auto max-w-md px-4 text-sm font-mono font-semibold dark:text-neutral-300 text-neutral-700 md:text-pretty text-center'>
+        <h2 className='mx-auto max-w-lg px-4 text-sm font-mono font-semibold dark:text-neutral-300 text-neutral-700 md:text-pretty text-center'>
           {data.about}
         </h2>
       </section>

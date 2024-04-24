@@ -1,7 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { ModeToggle } from '@/components/mode-toggle'
 import { ButtonLink } from '@/components/button-link'
-import { ButtonCard } from '@/components/button-card'
+import { CardLink } from '@/components/card-link'
 import { data } from '@/constants'
 
 export default function HomePage() {
@@ -43,14 +43,14 @@ export default function HomePage() {
         Personal Network
       </h3>
       {data.socials.map((social) => (
-        <ButtonCard key={social.url} {...social} />
+        <CardLink key={social.url} {...social} />
       ))}
 
       <h3 className='font-semibold mt-8 mb-4 text-xl dark:text-white text-black text-center'>
         Community Network
       </h3>
       {data.communities.map((community) => (
-        <ButtonCard key={community.url} {...community} />
+        <CardLink key={community.url} {...community} />
       ))}
     </main>
   )

@@ -6,6 +6,7 @@ import { Head } from '@/components/head'
 import { ThemeProvider } from '@/components/theme-provider'
 import { Toaster } from '@/components/ui/sonner'
 import { TooltipProvider } from '@/components/ui/tooltip'
+import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { cn } from '@/lib/utils'
 import '@/styles/globals.css'
@@ -24,14 +25,14 @@ export default function RootLayout({
     <html
       lang='en'
       className={cn(
-        'min-h-screen bg-background font-sans antialiased',
+        'min-h-screen bg-background font-sans antialiased overflow-y-scroll',
         GeistSans.variable,
         GeistMono.variable
       )}
       suppressHydrationWarning
     >
       <Head metadata={metadata} />
-      <body>
+      <body className='w-full'>
         <ThemeProvider
           attribute='class'
           defaultTheme='system'
@@ -39,6 +40,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <TooltipProvider>
+            <Header />
             {children}
             <Footer />
           </TooltipProvider>

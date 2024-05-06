@@ -1,5 +1,4 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
-import { ModeToggle } from '@/components/mode-toggle'
 import { ButtonLink } from '@/components/button-link'
 import { CardLink } from '@/components/card-link'
 import { data } from '@/constants'
@@ -26,7 +25,6 @@ export default function HomePage() {
           <h1 className='font-bold text-3xl dark:text-white text-black text-center'>
             {data.name}
           </h1>
-          <ModeToggle />
         </div>
         <h2 className='mx-auto max-w-lg px-4 text-sm font-mono font-semibold dark:text-neutral-300 text-neutral-700 md:text-pretty text-center'>
           {data.about}

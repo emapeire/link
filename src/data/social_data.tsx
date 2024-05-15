@@ -33,8 +33,8 @@ export const SOCIAL_DATA = {
       icon: MailIcon
     },
     {
-      title: 'Phone',
-      url: 'tel:+5493417190449',
+      title: 'WhatsApp',
+      url: 'https://wa.me/+5493417190449',
       icon: WhatsappIcon
     }
   ],

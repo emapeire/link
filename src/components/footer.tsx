@@ -4,21 +4,20 @@ export function Footer() {
   return (
     <footer className='flex items-center justify-center mb-8 mt-24 mx-auto w-full'>
       <div className='flex items-center justify-center space-x-4 font-medium dark:text-neutral-300 text-neutral-800 text-sm'>
-        <span>© {year}</span>
-        <span>—</span>
-        <section>
-          <span>By</span>{' '}
-          <span className='hover:text-neutral-900 dark:hover:text-neutral-100 transition-all'>
-            <a
-              href='https://x.com/emapeire'
-              target='_blank'
-              rel='noopener noreferrer'
-              className='hover:underline underline-offset-4'
-            >
-              @emapeire
-            </a>
-          </span>
-        </section>
+        <p>
+          © {year}
+          <span className='ms-2 me-2'>•</span>
+          <a
+            href='https://emapeire.xyz'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='hover:underline hover:underline-offset-4'
+          >
+            Emanuel Peire
+          </a>
+          <span className='ms-2 me-2'>—</span>
+          All rights reserved.
+        </p>
       </div>
     </footer>
   )

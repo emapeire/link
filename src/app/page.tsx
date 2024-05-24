@@ -5,7 +5,7 @@ import { data } from '@/constants'
 
 export default function HomePage() {
   return (
-    <main className='flex items-center flex-col mx-auto w-full justify-center pt-16 px-8'>
+    <main className='flex items-center flex-col mx-auto w-full justify-center pt-24 px-8'>
       <a
         href='https://github.com/emapeire'
         target='_blank'

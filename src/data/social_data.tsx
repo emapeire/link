@@ -7,7 +7,6 @@ import { NextJSArgIcon } from '@/components/icons/nextjsargentina'
 import { ResumeIcon } from '@/components/icons/resume'
 import { TelegramIcon } from '@/components/icons/telegram'
 import { WebIcon } from '@/components/icons/web'
-import { WhatsappIcon } from '@/components/icons/whatsapp'
 import { XIcon } from '@/components/icons/x'
 
 export const SOCIAL_DATA = {
@@ -31,11 +30,6 @@ export const SOCIAL_DATA = {
       title: 'Email',
       url: 'mailto:hi@emapeire.xyz',
       icon: MailIcon
-    },
-    {
-      title: 'WhatsApp',
-      url: 'https://wa.me/+5493417190449',
-      icon: WhatsappIcon
     }
   ],
   socials: [
